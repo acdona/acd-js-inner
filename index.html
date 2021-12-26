@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>inner JS</title>
+</head>
+
+<body>
+	<h1>innerHTML e innerText</h1>
+	<h2>Este é um h2</h2>
+	<p>Este é o parágrafo</p>
+</body>
+
+<script>
+	
+	let $h2 = document.querySelector('h2');
+	let $p = document.querySelector('p');
+	document.querySelector('p').addEventListener('click', () => { 
+	
+	 $h2.innerHTML = "<span>Mudei o H2 com <u>innerHTML</u></span>";
+	 $p.innerText = "<b>mudei o parágrafo com innerText</b>";
+	
+	});
+
+</script>
+
+
+</html>
